@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36.989" height="37" viewBox="0 0 36.989 37">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="36.989" height="37" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grid_Icon_White" data-name="Grid Icon White" clip-path="url(#clip-path)">
+    <rect id="Box" width="17" height="17" rx="2" transform="translate(19.989)" fill="#fff"/>
+    <rect id="Box-2" data-name="Box" width="17" height="17" rx="2" transform="translate(19.989 20)" fill="#fff"/>
+    <rect id="Box-3" data-name="Box" width="17" height="17" rx="2" fill="#fff"/>
+    <rect id="Box-4" data-name="Box" width="17" height="17" rx="2" transform="translate(0 20)" fill="#fff"/>
+  </g>
+</svg>

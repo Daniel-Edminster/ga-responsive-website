@@ -1,4 +1,3 @@
-
 * {
 	box-sizing: border-box;
 	/* border: 1px solid red; */
@@ -8,7 +7,6 @@ html, body {
     padding: 0;
 }
 
-
 body {
 	background: #181818;
 	
@@ -16,10 +14,7 @@ body {
 nav {
 	width: 100%;
 	background: #1F1F1F;
-	position: fixed;
-	margin-top: 0;
-	top: 0;
-	z-index: 999;
+	/* position: fixed; */
 	/* margin-bottom: ; */
 }
 
@@ -60,55 +55,56 @@ input {
 input:focus, textarea:focus {
     outline: none;
 }
-
 .nav-right {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
-	align-content: center;
-	align-items: center;
-
-	width: auto;
+	float: right;
+	text-align: right;
+	/* text-justify:; */
+	position: relative;
+}
+.nav-right > ul {
+	float: right;
+	/* position: absolute; */
+	bottom: 0;
+}
+.nav-left {
+	float: left;
+}
+.nav-left > ul > li {
+	list-style-type: none;
+	display: inline;
 }
 
-.nav-right-item {
+.nav-right > ul > li {
+	display: inline-block;
 	color: white;
 	font-family: 'sf_ui_displaysemibold', Arial, Helvetica, sans-serif;
-	padding: 0px 10px;
-	align-self: center;
-	white-space:nowrap;
-}
+	margin: 0 15px;
 
-#nav-right-item-active {
-	color: #999999;
 }
 
 
-.nav-left {
-	width: 50%;
-}
 
 .nav-container {
 	max-width: 80%;
 	min-width: 80%;
 	margin: 0 auto;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
-	min-height: 75px;
-	max-height: 75px;
 }
 .container {
 	min-width: 80%;
 	max-width: 80%;
-	/* height: 600px;
-	max-height: 600px; */
-	margin: 150px auto 0 auto;
+	height: 600px;
+	max-height: 600px;
+	margin: 0 auto;
 	/* border: 1px solid red; */
 
 }
-
+/* .p-gallery {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+} */
 .p-gallery {
 	display: flex;
 	flex-flow: column wrap;
@@ -157,7 +153,6 @@ input:focus, textarea:focus {
 	border-radius: 5px;
 	text-decoration: none;
 	padding: 5px 10px;
-
 
 }
 .camicon {
@@ -209,6 +204,7 @@ input:focus, textarea:focus {
 	padding-right: .8em;
 	display: inline-block;
 	color: #999999;
+	/* float: left; */
 }
 
 .search-button {
@@ -236,13 +232,11 @@ input:focus, textarea:focus {
 	font-family: 'sf_ui_displaymedium', Arial, Helvetica, sans-serif;
 	color: #999999;
 
-
 }
 
 .trending-items {
 	font-family: 'sf_ui_displaysemibold', Arial, Helvetica, sans-serif;
 	color: white;
-
 }
 
 .jumbotron-footer {
@@ -264,8 +258,6 @@ input:focus, textarea:focus {
 .license-notification {
 	float: right;
 	text-align: right;
-	padding-right: 10px;
-	/* margin-right: -12px; */
 	/* padding-right: -50px; */
 }
 
@@ -278,7 +270,7 @@ input:focus, textarea:focus {
 
 .filter-container {
 	width: 100%;
-	margin: 1em auto 0 auto;
+	margin: 0 auto;
 }
 
 .filter-links {
@@ -292,8 +284,8 @@ input:focus, textarea:focus {
 .filter-links > ul > li {
 	display: inline;
 	list-style: none;
-	padding-right: 1em;
 	
+
 }
 
 .filter-links > ul {
@@ -307,10 +299,6 @@ input:focus, textarea:focus {
 	float: right;
 	min-width: 50%;
 	text-align: right;
-	/* margin-right: -10px; */
-	/* margin-right: 10px; */
-	padding-right: 10px;
-	margin-top: 5px;
 }
 
 .grid-icons > ul {
@@ -325,44 +313,7 @@ input:focus, textarea:focus {
 	text-align: right;
 }
 
-
-/* https://stackoverflow.com/questions/44236541/how-to-create-a-dot-small-circle-under-text */
-
-.dot {
-	/* display: block; */
-	/* padding-top: 40px; */
-	display: inline-block;
-	vertical-align: top;
-	padding-bottom: 10px;
-	position: relative;
-	text-align: center;
-	padding: 20px 10px;
-	line-height: 24px;
-	min-width: 100px;
-}
-
-.dot::before {
-	transform: translateX(-50%);
-	border-radius: 100%;
-	position: absolute;
-	background: #FF4D2C;
-	bottom: 10px;
-	height: 5px;
-	content: '';
-	width: 5px;
-	left: 45%;
-  }
-
-  /* End stackoverflow code */
-
-.nav-flex-mobile, .nav-flex-mobile-item {
-	  display: none;
-}
-
 .debug {
 	border: 1px solid red;
 }
 
-.xs-mobile-hide {
-	display: initial;
-}

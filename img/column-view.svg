@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="37" viewBox="0 0 37 37">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="37" height="37" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="List_Icon" data-name="List Icon" clip-path="url(#clip-path)">
+    <rect id="Box" width="37" height="17" rx="2" fill="#999"/>
+    <rect id="Box-2" data-name="Box" width="37" height="17" rx="2" transform="translate(0 20)" fill="#999"/>
+  </g>
+</svg>

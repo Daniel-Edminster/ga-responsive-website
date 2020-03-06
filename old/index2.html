@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/fonts.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/media.css" />
-<link rel="stylesheet" type="text/css" href="css/media-small.css" />
+<link rel="stylesheet" type="text/css" href="css/style-flex-nav.css" />
 <!-- Display our icons, courtesy of font-awesome -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 </head>
@@ -13,59 +10,29 @@
 <nav>
 
 <div class="nav-container">
-
 <div class="nav-left">
-	<a href="#"class="camicon"><i class="fas fa-camera"></i></a>
+
+<a href="#"class="camicon"><i class="fas fa-camera"></i></a>
+
 </div>
 
 <div class="nav-right">
-	<div class="nav-right-item"><a id="nav-right-item-active">Home</a></div>
-	<div class="nav-right-item">Collections</div>
-	<div class="nav-right-item"><strong>…</strong></div>
-	<div class="nav-right-item"><a class="photo-link" href="#">Submit a photo</a></div>
-	<!-- <div class="nav-right-item"><a class="photo-link" href="#" onclick="toggleDebugger()">Debug</a></div>  -->
-	<div class="nav-right-item"><img class="xs-mobile-hide" src="img/bell.svg"  height="20px" /></div>
-	<div class="nav-right-item"><img class="xs-mobile-hide" src="img/profile.svg"  height="35px" /></div>
-</div>
 
-<div class="nav-flex-mobile">
-	<div class="nav-flex-mobile-item">
-		<a href="#"class="camicon"><i class="fas fa-camera"></i></a>
-	</div>
 
-	<div class="nav-flex-mobile-item">
-		<a href="#" id="nav-right-item-active">Home</a>
-	</div>
-
-	<div class="nav-flex-mobile-item">
-		Collections
-	</div>
-
-	<div class="nav-flex-mobile-item">
-		<strong>…</strong>
-	</div>
-
-	<div class="nav-flex-mobile-item">
-		<a class="photo-link" href="#">Submit a photo</a>
-	</div>
-
-	<div class="nav-flex-mobile-item xs-mobile-hide">
-		<img src="img/bell.svg"  height="20px" />
-	</div>
-
-	<div class="nav-flex-mobile-item xs-mobile-hide">
-	<img src="img/profile.svg"  height="35px" />
-	</div>
+<div class="nav-right-item"><a id="nav-right-item-active">Home</a></div>
+<div class="nav-right-item">Collections</div>
+<div class="nav-right-item"><strong>…</strong></div>
+<div class="nav-right-item"><a class="photo-link" href="#">Submit a photo</a></div>
+<!-- <div class="nav-right-item"><a class="photo-link" href="#" onclick="toggleDebugger()">Debug</a></div>  -->
+<div class="nav-right-item"><img src="img/bell.svg"  height="20px" /></div>
+<div class="nav-right-item"><img src="img/profile.svg"  height="35px" /></div>
 
 </div>
 
-
-</div><!--nav container-->
+</div>
 
 
 <div class="clearfix"></div>
-
-
 
 </nav>
 <!-- <div class="clearfix"></div> -->
@@ -79,10 +46,10 @@
 
 		<div class="searchbar">
 			<div class="search-icon"><i class="fas fa-search"></i></div>
-			<input type="text" class="search-photos" placeholder="Search free high-resolution photos" />
+			<input type="text" placeholder="Search free high-resolution photos" />
 			<a class="search-button" href="#">Search</a>
 		</div>
-<div class="clearfix" id="jumboclearfix"></div>
+<div class="clearfix"></div>
 	</div>
 
 	<div class="trending-container">
@@ -99,17 +66,15 @@
 		<div class="clearfix"></div>
 	</div>
 
-
 	<div class="filter-container">
 		<div class="filter-links">
 			<ul>
 				<li><a href="#">Trending</a></li>
-				<li class="p-text dot">New </li>
+				<li class="p-text">New</li>
 				<li class="p-text">Following</li>
+
+
 			</ul>
-			<!-- <div class="dot">
-			<img src="img/notification-dot.svg" height="5px" />
-		    </div> -->
 		</div>
 
 		<div class="grid-icons">
@@ -119,7 +84,7 @@
 			</ul> -->
 			<ul>
 			<li><a onclick="switchSingleColumnView()"><img src="img/column-view.svg" height="15px" /></a></li> 
-			<li><a onclick="switchMultiColumnView()"><img src="img/grid-view.svg" height="15px" /></a></li>
+			<li><a  onclick="switchMultiColumnView()"><img src="img/grid-view.svg" height="15px" /></a></li>
 		</ul>
 		</div>
 
@@ -129,7 +94,7 @@
 
 
 	<div class="p-gallery">
-<!-- <div class="ps1">1</div>
+<div class="ps1">1</div>
 <div class="ps1">2</div>
 <div class="ps4">3</div>
 <div class="ps1">4</div>
@@ -145,7 +110,7 @@
 <div class="ps1">12</div>
 <div class="ps1">13</div>
 <div class="ps2">14</div>
-<div class="ps2">15</div> -->
+<div class="ps2">15</div>
 
 </div>
 

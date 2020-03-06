@@ -1,0 +1,145 @@
+@media (max-width: 900px)
+{
+    .nav-container {
+        max-width: 95%;
+        min-width: 95%;
+        /* margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+        max-height: 75px; */
+    }
+    .grid-icons  {
+        display: none ;
+    }
+
+    .ps1, .ps2, .ps3, .ps4 {
+        background: #FFF;
+        width: 100%;
+        min-width: 100%;
+        margin: .4em;
+        text-align: center ;
+    }
+    .container {
+        min-width: 95%;
+        /* margin: 0 auto; */
+        margin: 100px auto 0 auto;
+    }
+    .p-gallery {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        height: 650%;
+        min-width: 100%;
+        /* margin-left: -10px; */
+    }
+    
+    .jumbotron {
+        min-width: 95%;
+    }
+    .trending-container {
+        width:95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .filter-links {
+        min-width: 95%;
+        margin: 0 auto;
+    }
+
+    .filter-links > ul > li {
+       display: inline-block;
+       width: 30%;
+       text-align: center;
+       margin: 0 auto;
+
+    }
+
+    .photo-of-the-day {
+        /* float: left; */
+        text-align: center;
+        /* display: inline-block; */
+        /* padding-left: -.2em; */
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .license-notification {
+        /* float: right; */
+        text-align: center;
+
+        margin: 0 auto;
+        float: none;
+    }
+    #jumboclearfix {
+        display: none;
+    }
+
+    /* https://stackoverflow.com/questions/44236541/how-to-create-a-dot-small-circle-under-text */
+    .dot {
+        /* display: block; */
+        /* padding-top: 40px; */
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 10px;
+        position: relative;
+        text-align: center;
+        /* padding: 20px 10px; */
+        padding: 0 10px 20px 10px;
+        line-height: 24px;
+        min-width: 100px;
+    }
+    
+    .dot::before {
+        transform: translateX(-50%);
+        border-radius: 100%;
+        position: absolute;
+        background: #FF4D2C;
+        bottom: 10px;
+        height: 5px;
+        content: '';
+        width: 5px;
+        left: 50%;
+      }
+      .nav-left, .nav-right {
+          display: none;
+      }
+      
+
+      .nav-flex-mobile {
+          display: flex;
+          flex-flow: row nowrap;
+          min-width: 100%;
+          justify-content: space-evenly;
+          
+          white-space: nowrap;
+          min-height: 75px;
+          max-height: 75px;
+      }
+      .nav-flex-mobile-item {
+        display: flex;
+
+        color: white;
+        font-family: 'sf_ui_displaysemibold', Arial, Helvetica, sans-serif;
+        padding: 0px 10px;
+        align-self: center;
+
+      }
+
+      .camicon {
+        float: none;
+        text-decoration: none;
+        color: white;
+        font-size: 1.0em;
+        bottom: 0;
+        
+    }
+
+    /* input {
+        min-width: 444vw;
+    } */
+}

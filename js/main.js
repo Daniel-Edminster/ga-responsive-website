@@ -69,3 +69,58 @@ function switchMultiColumnView()
 
 
 }
+
+function generateRandomFlexboxContent()
+{
+    let num = 15;
+    for(let i=0;i<num;i++)
+    {
+        let rand = randomNumber(1,4);
+        
+        let flexboxcontainer = document.querySelector(".p-gallery");
+        flexboxcontainer.style.overflow="hidden";
+
+        if(rand === 1)
+        {
+            let node = document.createElement("div");
+            node.className="ps1";
+            flexboxcontainer.appendChild(node);
+
+        }
+        else if(rand === 2)
+        {
+            let node = document.createElement("div");
+            node.className="ps2";
+            flexboxcontainer.appendChild(node);
+
+        }
+        else if(rand === 3)
+        {
+            let node = document.createElement("div");
+            node.className="ps3";
+            flexboxcontainer.appendChild(node);
+            
+        }
+        else if(rand === 4)
+        {
+            let node = document.createElement("div");
+            node.className="ps4";
+            flexboxcontainer.appendChild(node);
+            
+        }
+
+    }
+    // let rand1 = randomNumber(1,4);
+
+    
+}
+
+//https://www.geeksforgeeks.org/how-to-generate-random-number-in-given-range-using-javascript/
+function randomNumber(min, max) {  
+    return Math.floor(Math.random() * (max - min) + min); 
+}
+
+window.onload = function()
+{
+    this.generateRandomFlexboxContent();
+}
