@@ -57,6 +57,8 @@ input {
 	/* font-weight: 700; */
 }
 
+/* https://stackoverflow.com/questions/3660831/getting-rid-of-the-blue-focus-rectangle-on-input-boxes-in-html-css 
+Remove blue highlighting on input when clicking on a textarea or input  */
 input:focus, textarea:focus {
     outline: none;
 }
@@ -67,6 +69,7 @@ input:focus, textarea:focus {
 	justify-content: flex-end;
 	align-content: center;
 	align-items: center;
+	/* align-items: ; */
 
 	width: auto;
 }
